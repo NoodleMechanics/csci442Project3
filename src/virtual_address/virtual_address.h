@@ -6,6 +6,8 @@
 #include <cstdlib>
 #include <ostream>
 
+#include <bitset>
+
 
 /**
  * A representation of a virtual address, which includes both the page of a

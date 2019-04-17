@@ -13,5 +13,5 @@ void Frame::set_page(Process* process, size_t page_number) {
   Frame::page_number = page_number;
 
   Frame::process = process;
-  // Frame::contents = process->pages[page_number];
+  Frame::contents = process->pages[page_number];
 }
