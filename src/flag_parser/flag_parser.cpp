@@ -62,9 +62,9 @@ bool parse_flags(int argc, char** argv, FlagOptions& flags) {
         flags.verbose = true;
         break;
       case 's':
-        if(optarg == "LRU") {
+        if(strcmp(optarg, "LRU") == 0) {
           flags.strategy = ReplacementStrategy::LRU;
-        } else if(optarg == "FIFO") {
+        } else if(strcmp(optarg, "FIFO") == 0) {
           flags.strategy = ReplacementStrategy::FIFO;
         } else {
             return false;

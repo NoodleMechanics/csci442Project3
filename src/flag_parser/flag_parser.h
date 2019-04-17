@@ -9,6 +9,7 @@
 #include <string>
 
 #include <getopt.h>
+#include <cstring>
 
 
 /**
